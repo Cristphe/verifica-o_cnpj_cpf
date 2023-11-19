@@ -1,0 +1,37 @@
+//JQUERY HEAD
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+//INPUT
+ <label>Cpf</label>
+        <input type="text" name="cpf" id="cpf"  placeholder="CPF" ><br><br>
+
+  
+//BIBLIOTECA UTILIZADA
+<script src="https://cdn.jsdelivr.net/npm/js-brasil/js-brasil.js"></script>
+
+
+//VERIFICAR CPF
+<script>
+  $("#cpf").on("blur", function(){
+      let cpf_value = $(this).val();
+    
+      if(jsbrasil.validateBr.cpf(cpf_value)) {
+      } else {
+    	  alert("CPF inválido")
+      }
+  });
+  $("#profcpf").on("blur", function(){
+      let cpf_value = $(this).val();
+    
+      if(jsbrasil.validateBr.cpf(cpf_value)) {
+      } else {
+    	  alert("CPF inválido")
+      }
+  });
+
+</script>
+
+
+
+
